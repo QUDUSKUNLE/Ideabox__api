@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            background: #fff;
+            padding: 25px;
+        }
+        
+        .header table {
+            background: #225be2;
+            color: #fff;
+            display: table;
+            border-color: #225be2;
+        }
+        
+        th {
+            width: 300px;
+            font-weight: bold;
+            display: table-cell;
+            padding: 20px;
+        }
+        
+        th img {
+            float: right;
+            height: 50px;
+            width: 50px;
+        }
+        
+        h3 {
+            color: #fff;
+            font-weight: 100;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        .body,
+        .footer {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <table>
+                <tr>
+                    <th>
+                        <h3>Reset Password Link</h3>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="body">
+            {% if link %}
+            <div>
+                <p> Kindly click the link to reset your password {{ link }}. </p>
+            </div>
+
+            {% endif %}
+            <div>
+                <p>Regards,</p>
+                <p>The IdeaBox Team</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

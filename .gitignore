@@ -1,0 +1,9 @@
+*.pyc
+__pycache_/
+.cache/
+.env
+.DS_Store
+.vscode/
+.coverage
+.tox/
+.pytest_cache/
