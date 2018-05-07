@@ -2,14 +2,15 @@ language: python
 python:
   - "3.6"
 install: "pip install -r requirements.txt"
+
 before_script:
   - pip install -r requirements.txt
+
 script:
   - pytest
-  - flake8 cmdbox
-  - coverage run manage.py test --settings=cmdbox.tests_settings
+  
 after_success:
   - coveralls
 
-  notifications:
-    slack: andela:4Y68W1U2jFTfv3i7LrVVkFzS
+notifications:
+  slack: andela:4Y68W1U2jFTfv3i7LrVVkFzS
