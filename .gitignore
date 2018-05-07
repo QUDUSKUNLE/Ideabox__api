@@ -7,3 +7,4 @@ __pycache_/
 .coverage
 .tox/
 .pytest_cache/
+.coverage
