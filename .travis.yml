@@ -8,9 +8,10 @@ before_script:
 
 script:
   - pytest
-  
+
 after_success:
   - coveralls
 
 notifications:
   slack: andela:4Y68W1U2jFTfv3i7LrVVkFzS
+  webhooks: https://coveralls.io/webhook?repo_token=RT2CHqilsAIb8tIYDvllBKaA2fvxyIvqh
