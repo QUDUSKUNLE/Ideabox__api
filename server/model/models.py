@@ -2,13 +2,12 @@ import datetime
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-
-from configuration import app_config
+# from manage import app_config
+# from config import development_environment
 
 
 app = Flask(__name__, template_folder='templates')
-app_config(app)
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 
 class User(db.Model):

@@ -1,4 +1,4 @@
 from .models import (
     User, Idea, Category, Comment,
-    SubComment, Tag, db, app
+    SubComment, Tag, app, db
 )
