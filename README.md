@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
+[![Coverage Status](https://coveralls.io/repos/github/QUDUSKUNLE/Ideabox__api/badge.svg?branch=develop)](https://coveralls.io/github/QUDUSKUNLE/Ideabox__api?branch=develop)
+[![Build Status](https://travis-ci.org/QUDUSKUNLE/Ideabox__api.svg?branch=develop)](https://travis-ci.org/QUDUSKUNLE/Ideabox__api)
+
 ### Ideabox API
 
 Server side implementation of IdeaBox
