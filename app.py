@@ -96,6 +96,8 @@ def app_config(app, environment):
     )
     return app
 
+app = app_config(app, os.environ.get('ENVIRONMENT'))
+
 if __name__ == '__main__':
     app = app_config(app, os.environ.get('ENVIRONMENT'))
     app.run()
