@@ -8,3 +8,4 @@ __pycache_/
 .tox/
 .pytest_cache/
 .coverage
+hooks/

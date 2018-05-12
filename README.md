@@ -40,27 +40,27 @@ export $(cat .env)
 ```
 ### Run the app:
 ```
-$ python manage.py runserver
+$ gunicorn app:app
 ```
-- The app should now be available from your browser at http://127.0.0.1:5000
+- The app should now be available from your browser at http://127.0.0.1:8000
 
 - Run database upgrade
 ```
-flask db upgrade
+python3 manage.py db upgrade
 ```
 
 ### Making Changes to the Model
 - After making a change on the model, apply the database migration to make the change in the database before pushing the code on Github:
 ```
-$ flask db migrate -m “message indicating change made”
+$ python3 manage.py db migrate -m “message indicating change made”
 ```
 ```
-$ flask db upgrade
+$ python3 manage.py db upgrade
 ```
 
 - Check migrations history to confirm change is made.
 ```
-$ flask db history
+$ python3 manage.py db history
 ```
 
 ### Installing Git hooks
@@ -69,7 +69,7 @@ $ sh setup_hooks.sh
 ```
 ### Authors
 
-* **Qudus Yekeen** - *Initial work* 
+* **Qudus Yekeen** - *Initial work*
 
 See also the list of [contributors](https://github.com/QUDUSKUNLE/Ideabox__api/graphs/contributors) who participated in this project.
 

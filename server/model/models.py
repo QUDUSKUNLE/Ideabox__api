@@ -2,8 +2,6 @@ import datetime
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-# from manage import app_config
-# from config import development_environment
 
 
 app = Flask(__name__, template_folder='templates')
