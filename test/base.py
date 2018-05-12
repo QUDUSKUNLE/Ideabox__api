@@ -1,15 +1,16 @@
+import os
+
 from flask_testing import TestCase
 
 from server.model import app, db
-from manage import app_config
-from config import test_environment
+from app import app_config
 
 
 class BaseTestCase(TestCase):
     """ Base Tests """
 
     def create_app(self):
-        self.app = app_config(app, test_environment)
+        self.app = app_config(app, os.environ.get('TEST_ENVIRONMENT'))
         self.app_context = self.app.app_context()
         self.app_context.push()
         self.client = self.app.test_client()
