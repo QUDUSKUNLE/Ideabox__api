@@ -94,7 +94,6 @@ def app_config(app, environment):
         '/api/v1/subcomment/<string:subcomment_id>/',
         endpoint='subcomment'
     )
-
     return app
 
 if __name__ == '__main__':
