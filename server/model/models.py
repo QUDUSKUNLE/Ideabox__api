@@ -3,8 +3,8 @@ import datetime
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
+# app = Flask(__name__, instance_relative_config=True, template_folder='templates')
 
-app = Flask(__name__, template_folder='templates')
 db = SQLAlchemy()
 
 

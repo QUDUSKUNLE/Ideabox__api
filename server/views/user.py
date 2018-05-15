@@ -11,7 +11,7 @@ from ..middlewares import (
     PushID,
     validate_request
 )
-from ..model import User, db, app
+from ..model import User, db
 from ..service import MailService
 
 
@@ -116,12 +116,12 @@ class ResetPasswordResources(Resource):
         user.reset_password_link = password_link
         db.session.commit()
 
-        email = dict(
-            config=app,
-            recipient=[user.email],
-            link=password_link
-        )
-        MailService().reset_password_mail(email)
+        # email = dict(
+        #     config=app,
+        #     recipient=[user.email],
+        #     link=password_link
+        # )
+        # MailService().reset_password_mail(email)
         response = jsonify(dict(
             data=dict(
                 message='Email reset link sent successfully'
