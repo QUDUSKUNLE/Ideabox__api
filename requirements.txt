@@ -3,7 +3,7 @@ aniso8601==3.0.0
 astroid==1.6.1
 attrs==18.1.0
 blinker==1.4
-bottle==0.12.13
+bottle==0.12.20
 certifi==2018.4.16
 cffi==1.11.5
 chardet==3.0.4
